@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To Aia ♡ </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: pink;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 10px;
+            cursor: pointer;
+            background-color: black;
+            color: #FF007F;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #29e2f0;
+        }
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 100px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="showMessage('hi')"> Hi </button>
+        <button onclick="showMessage('thankYou')"> Thank You </button>
+        <button onclick="showMessage('reminder')"> Reminder </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script>
+        function showMessage(type) {
+            const messageElement = document.getElementById('message');
+            let content = '';
+
+            switch(type) {
+                case 'hi':
+                    content = `
+
+I've been doing a lot of whatever things those were lately, and I realize I owe you a sincere apology. The way I've been treating you recently... it's not okay, and it's not fair to you at all. I can see how my behavior might have pushed you to the point of wanting to walk away, and that breaks my heart because it's the last thing I ever wanted.
+
+Find someone else? God, no. That's never been considered. The truth is, I've been drowning in my own thoughts, trying to figure some stuff out. And yeah, I'll be honest - a lot of that time I spent "figuring things out" was probably just me spinning my wheels. But that's on me, not you. You also didn't deserve the treatment, and I'm truly sorry if I ever make you feel forgotten or unimportant.
+
+The thought of losing you because I couldn't get my act together... it terrifies me. You've brought so much light into my life, and I've been taking that for granted. I don't want to be that person.
+
+I need you to know that my feelings for you haven't changed. You're just way too important to me. Words can't really capture it, but I love and appreciate you more than I can express.
+
+Letting go of you isn't an option for me.
+
+`;
+
+                    break;
+
+                case 'thankYou':
+
+                    content = `Already in tears while writing you this one.
+
+I just wanted to let you know how thankful I am for having you. I know you're going through a lot right now, and it means so much to me that you still make time to think of me. It's crazy how you manage to be so caring even when you're dealing with all this stress.
+
+Despite that hatred you're feeling, I know you care so much. I see how hard things are for you, and I want you to know it only makes me admire you more. You are just this incridible alien I know.
+
+I'm just so lucky to have you step-in on this boring life I have. I'm here for you, always. 
+
+Can you hang in there? Maybe, we got this.`;
+
+                    break;
+
+                case 'reminder':
+
+                    content = `I love you so much. 
+
+I don't know what else to do to change your mind whenever you decide to leave. I know how much you are so done with this. Whatever decision you may end up with, please know that I'm not ever gonna let you go. You can stay away from me all you want, forget about my existence, ignore me, but I'm not gonna do the same. I don't want to.
+
+I want this beating organ under my chest to keep you there, have you locked up. That way, I may have failed to keep you and make you stay, but at least my heart will.
+
+Is it too cringe? Gusto ko lang naman malaman mo yun. Maybe you may find this corny or something. Hindi ko na kase alam gagawin ko..
+
+But I badly wanted you to stay.
+
+`;
+
+                break;
+            }
+
+            messageElement.innerHTML = content.replace(/\n/g, '<br>');
+        }
+    </script>
+</body>
+</html>
